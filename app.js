@@ -1,9 +1,14 @@
 (function() {
+  console.log(database);
   var button = document.getElementById("randomButton");
 
   function putRandomNameOnText() {
-     document.getElementById("randomName").innerHTML = "siema, dziala"
-      document.getElementById("randomDescription").innerHTML = "siema, dziala2"
+    var num = Math.floor(randNumber = Math.random() * database.length);
+    console.log(num);
+    var person = database[num];
+
+    document.getElementById("randomName").innerHTML = person.name;
+    document.getElementById("randomDescription").innerHTML = person.description;
   }
 
   button.onclick = function(e) {
