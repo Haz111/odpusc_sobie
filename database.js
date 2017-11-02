@@ -11,9 +11,6 @@ var database = [{
         name: "Jerzy Waszyngton",
         description: ""
     }, {
-        name: "Adolf Hitler",
-        description: ""
-    }, {
         name: "Arystoteles",
         description: ""
     }, {
@@ -32,9 +29,6 @@ var database = [{
         name: "Elżbieta I Tudor",
         description: ""
     }, {
-        name: "Karol Marks",
-        description: ""
-    }, {
         name: "Juliusz Cezar",
         description: ""
     }, {
@@ -42,9 +36,6 @@ var database = [{
         description: ""
     }, {
         name: "Marcin Luter",
-        description: ""
-    }, {
-        name: "Józef Stalin",
         description: ""
     }, {
         name: "Albert Einstein",
