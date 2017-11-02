@@ -1,7 +1,4 @@
 (function() {
-  console.log(database);
-  var button = document.getElementById("randomButton");
-
   function getTodayKey() {
     var date = new Date();
     return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
@@ -42,7 +39,13 @@
     changePersonOnWebsite(person);
   }
 
-  button.onclick = function(e) {
-    putRandomNameOnText();
+  function init() {
+    document.getElementById("randomButton").onclick = putRandomNameOnText;
+    var person = getPersonFromLocalStorage();
+    if (person.name)
+      changePersonOnWebsite(person);
+
   }
+
+  init();
 })()
