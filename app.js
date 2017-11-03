@@ -44,7 +44,6 @@
     var person = getPersonFromLocalStorage();
     if (person.name)
       changePersonOnWebsite(person);
-
   }
 
   init();
