@@ -10,7 +10,6 @@
       name: localStorage.getItem(key + "-name"),
       description: localStorage.getItem(key + "-description")
     }
-    console.log(key, person)
     return person;
   }
 
